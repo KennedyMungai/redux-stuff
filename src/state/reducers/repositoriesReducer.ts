@@ -13,12 +13,14 @@ interface SearchRepositoriesSuccessAction {
   payload: string[];
 };
 
+type Action = SearchRepositoriesAction | SearchRepositoriesErrorAction | SearchRepositoriesSuccessAction ;
+
 interface SearchRepositoriesErrorAction {
   type: 'search_repositories_error';
   payload: string;
 };
 
-const reducer = (state: RepositoriesState, action: SearchRepositoriesAction | SearchRepositoriesErrorAction | SearchRepositoriesSuccessAction): RepositoriesState => {
+const reducer = (state: RepositoriesState, action: Action): RepositoriesState => {
   switch (action.type) {
     case 'search_repositories':
       return { loading: true, error: '', data: [] }
