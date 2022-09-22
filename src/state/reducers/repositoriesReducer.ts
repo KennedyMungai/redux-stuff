@@ -4,7 +4,7 @@ interface RepositoriesState {
   data: string[];
 }
 
-const reducer = (state, action) => {
+const reducer = (state: RepositoriesState, action: any) => {
 
 }
 
