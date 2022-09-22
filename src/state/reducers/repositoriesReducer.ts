@@ -1,10 +1,10 @@
+import { ActionType } from '../action-types/index';
+
 interface RepositoriesState {
   loading: boolean;
   error: string;
   data: string[];
 }
-
-
 
 const reducer = (state: RepositoriesState, action: Action): RepositoriesState => {
   switch (action.type) {
