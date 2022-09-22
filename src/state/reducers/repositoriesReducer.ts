@@ -1,4 +1,5 @@
 import { ActionType } from '../action-types/index';
+import { Action } from '../actions/index';
 
 interface RepositoriesState {
   loading: boolean;
