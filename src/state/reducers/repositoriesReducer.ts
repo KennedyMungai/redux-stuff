@@ -4,21 +4,7 @@ interface RepositoriesState {
   data: string[];
 }
 
-interface SearchRepositoriesAction {
-  type: ActionType.SEARCH_REPOSITORIES;
-};
 
-interface SearchRepositoriesSuccessAction {
-  type: ActionType.SEARCH_REPOSITORIES_SUCCESS;
-  payload: string[];
-};
-
-interface SearchRepositoriesErrorAction {
-  type: ActionType.SEARCH_REPOSITORIES_ERROR;
-  payload: string;
-};
-
-type Action = SearchRepositoriesAction | SearchRepositoriesErrorAction | SearchRepositoriesSuccessAction ;
 
 enum ActionType {
   SEARCH_REPOSITORIES = 'search_repositories',
