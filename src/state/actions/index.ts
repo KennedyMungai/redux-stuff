@@ -1,3 +1,5 @@
+import { ActionType } from '../action-types/index';
+
 interface SearchRepositoriesAction {
     type: ActionType.SEARCH_REPOSITORIES;
 };
