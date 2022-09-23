@@ -7,7 +7,7 @@ import { actionCreators } from '../state';
 const RepositoriesList: React.FC = () => {
     const [term, setTerm] = useState('');
     const { searchRepositories } = useActions();
-    const { data, error, loading } = useSelector((state) => state.repositories);
+    const { data, error, loading } = useTypedSelector((state) => state.repositories);
 
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
