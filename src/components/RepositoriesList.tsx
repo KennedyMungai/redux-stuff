@@ -20,6 +20,7 @@ const RepositoriesList: React.FC = () => {
                 <input type="text" value={term} onChange={(e) => setTerm(e.target.value)} />
                 <button>Search</button>
             </form>
+            {error && <h3>{error}</h3>}
         </div>
     )
 }
