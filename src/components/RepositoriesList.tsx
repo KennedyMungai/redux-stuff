@@ -8,7 +8,6 @@ const RepositoriesList: React.FC = () => {
     const [term, setTerm] = useState('');
     const { searchRepositories } = useActions();
     const { data, error, loading } = useSelector((state: any) => state.repositories);
-    console.log(state);
 
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
