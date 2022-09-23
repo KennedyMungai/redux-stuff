@@ -3,7 +3,7 @@ import { Action } from '../actions/index';
 
 interface RepositoriesState {
   loading: boolean;
-  error: string;
+  error: string | null;
   data: string[];
 }
 
@@ -13,7 +13,7 @@ const initialState = {
   data: []
 }
 
-const reducer = (state: RepositoriesState, action: Action): RepositoriesState => {
+const reducer = (state: RepositoriesState =  initialState, action: Action): RepositoriesState => {
   switch (action.type) {
     case ActionType.SEARCH_REPOSITORIES:
       return { loading: true, error: '', data: [] }
