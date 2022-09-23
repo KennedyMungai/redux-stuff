@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const RepositoriesList: React.FC = () => {
     const [term, setTerm] = useState('');
 
-    const onSubmit = (e) => {
+    const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
     };
 
