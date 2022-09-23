@@ -4,6 +4,10 @@ import React, { useState } from 'react';
 const RepositoriesList: React.FC = () => {
     const [term, setTerm] = useState('');
 
+    const onSubmit = (e) => {
+        e.preventDefault();
+    };
+
     return (
         <div>
             <form action="" onSubmit={onSubmit}>
