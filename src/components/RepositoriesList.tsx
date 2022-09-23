@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const RepositoriesList = () => {
+const RepositoriesList: React.FC = () => {
   return (
     <div>RepositoriesList</div>
   )
